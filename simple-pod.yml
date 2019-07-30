@@ -1,10 +1,10 @@
-apiVersion: v1
-kind: Pod
-metadata:
-name: hello-pod
+apiVeraion: v1.0
+kind: pod
+metadata: 
+  name: simple-pod
 spec:
-containers:
-- name: hello-ctr
-image: jenkins
-ports:
-- containerPort: 8080
+  containers:
+  - name: ngnix
+    image: ngnix
+    ports:
+    - containerPort: 80
