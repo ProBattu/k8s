@@ -1,0 +1,19 @@
+apiVeraion: v1.0
+kind: ReplicationController
+metadata: 
+  name: simple-rc
+spec:
+  replicas: 3
+  selector:
+    app: ngnix
+  template: 
+    metadata:
+      labels:
+        app: ngnix
+        ver: "1.0"
+    spec:
+      containers:
+      - name: simple-pod
+        image: ngnix
+        ports:
+        - containerPort: 80
