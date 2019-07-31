@@ -19,3 +19,8 @@ apt-get install -y kubelet kubeadm kubectl
 
 # kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
 # kubectl get pods --all-namespaces
+
+
+#execute a script
+#chmod +x k8s master install.sh
+#./k8s master install.sh

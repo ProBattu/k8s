@@ -14,3 +14,8 @@ apt-get install -y kubelet kubeadm kubectl
 
 # Go to k8s Master type below command you will get one node is added
 # Kubectl get nodes
+
+
+#execute a script
+#chmod +x k8s node install.sh
+#./k8s node install.sh
