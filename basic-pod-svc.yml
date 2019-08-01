@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: service
+metadata:
+  name: basic-service
+spec:
+  selecter:
+    app: ngnix
+  type: NodePort
+  Ports:
+   - name: http
+     port: 80
+     nodePort: 30001
+     protocal: TCP
+     
